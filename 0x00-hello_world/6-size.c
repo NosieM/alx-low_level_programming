@@ -1,23 +1,2 @@
-#include <stdio.h>
-
-/**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-int main(void)
-{
-char c;
-int i;
-long int li;
-long long int ll;
-float f;
-
-printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
-printf("Size of an int :%lu bytes(s)\n", (unsigned long)sizeof(i));
-printf("Size of long int: %lu byte(s)\n", (unsigned long)sizeof(li));
-printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(ll));
-printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
-
-return (0);
-}
+gcc 6-size.c -m32 -o size32 2> /tmp/32
+gcc 6-size.c -m64 -o size64 2> /tmp/64
