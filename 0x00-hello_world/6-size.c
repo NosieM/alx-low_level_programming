@@ -1,2 +1,22 @@
-gcc 6-size.c -m32 -o size32 2> /tmp/32
-gcc 6-size.c -m64 -o size64 2> /tmp/64
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+char c;
+int i;
+long int li;
+long long int lli;
+float f;
+
+printf("Size of a char: %d byte(s)\n", (int)sizeof(c));
+printf("Size of an int : %d byte(s)\n", (int)sizeof(i));
+printf("Size of a long int: %d byte(s)\n", (int)sizeof(li));
+printf("Size of a long long int: %d byte(s)\n", (int)sizeof(lli));
+
+return (0);
+}
