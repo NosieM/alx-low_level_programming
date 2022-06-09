@@ -1,12 +1,2 @@
-#include "main.h"
-
-/**
- * main - print alphabets using putcher
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
+int _putchar(char c); 
+void print_alphabet(void);
