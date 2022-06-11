@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Print alphabt
  *
  * Return: Always 0 (Success)
  */
@@ -19,5 +19,4 @@ x++;
 }
 putchar('\n');
 return (0);
-
 }
