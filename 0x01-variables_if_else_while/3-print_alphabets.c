@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-int x = 'a';
-
-while (x <= 'z')
-{
-if ((x != 'e') && (x != 'q'))
+int x;
+for (x = 'a'; x <= 'z'; x++)
 {
 putchar(x);
-x++;
+}
+for (x = 'A'; x <= 'Z'; x++)
+{
+putchar(x);
+
 }
 putchar('\n');
 return (0);
 }
-
